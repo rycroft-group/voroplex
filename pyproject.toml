@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77", "wheel", "Cython>=0.29.0", "numpy>=1.20.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voroplex"
+dynamic = ["version"]
+description = "Parallel and differentiable 2D and 3D Voronoi tessellations, built on Voro++"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Jiayin Lu", email = "jiayinlu19960224work@gmail.com"},
+    {name = "Peihang Lin"},
+    {name = "Mucheng Zhu"},
+    {name = "Shanmei Wanyan"},
+    {name = "Ying Jiang"},
+    {name = "Chris H. Rycroft"},
+    {name = "Chenfanfu Jiang"},
+]
+keywords = ["voronoi", "tessellation", "computational-geometry", "parallel", "voro++"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: C++",
+    "Programming Language :: Cython",
+]
+dependencies = [
+    "numpy>=1.20.0",
+]
+
+[project.optional-dependencies]
+mesh = ["torch>=1.11.0"]
+export = ["torch>=1.11.0", "vtk>=9.0.0"]
+all = ["torch>=1.11.0", "vtk>=9.0.0"]
+dev = ["pytest", "black"]
+
+# [project.urls] will give the repository and issue tracker, once the
+# project's permanent repository has been set up.
+
+[tool.setuptools.dynamic]
+version = {attr = "voroplex.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']

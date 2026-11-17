@@ -1,0 +1,4 @@
+[submodule "voroplex/_lib/voro"]
+	path = voroplex/_lib/voro
+	url = https://github.com/chr1shr/voro.git
+	branch = dev

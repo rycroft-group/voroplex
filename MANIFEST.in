@@ -1,0 +1,29 @@
+# Include the Voro++ sources from the Git submodule, and its license
+recursive-include voroplex/_lib/voro/src *.cc *.hh
+include voroplex/_lib/voro/LICENSE
+recursive-include voroplex/_lib *.cpp *.h *.pyx
+
+# Include configuration files
+include voroplex/_lib/config.mk
+
+# Include documentation
+include README.md
+include CHANGELOG.md
+include LICENSE
+include docs/voronoi_example.png
+
+# Include the examples and the tests
+recursive-include examples *.py
+include examples/README.md
+include examples/cvt_2d_optimization_uniform.png
+recursive-include tests *.py
+
+# Include package data
+recursive-include voroplex *.py
+
+# Exclude build artifacts
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.so
+global-exclude *.o
+global-exclude __pycache__
