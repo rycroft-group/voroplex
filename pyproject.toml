@@ -40,8 +40,9 @@ export = ["torch>=1.11.0", "vtk>=9.0.0"]
 all = ["torch>=1.11.0", "vtk>=9.0.0"]
 dev = ["pytest", "black"]
 
-# [project.urls] will give the repository and issue tracker, once the
-# project's permanent repository has been set up.
+[project.urls]
+Repository = "https://github.com/rycroft-group/voroplex"
+Issues = "https://github.com/rycroft-group/voroplex/issues"
 
 [tool.setuptools.dynamic]
 version = {attr = "voroplex.__version__"}

@@ -182,8 +182,8 @@ Voro++ is included as a Git submodule, so clone the repository with
 `--recursive`:
 
 ```bash
-git clone --recursive https://github.com/jiayinlu19960224/pyvoro_multithreaded.git
-cd pyvoro_multithreaded
+git clone --recursive https://github.com/rycroft-group/voroplex.git
+cd voroplex
 pip install -e .
 ```
 
