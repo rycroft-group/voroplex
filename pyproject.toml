@@ -11,13 +11,13 @@ requires-python = ">=3.10"
 license = "BSD-3-Clause"
 license-files = ["LICENSE"]
 authors = [
-    {name = "Jiayin Lu", email = "jiayinlu19960224work@gmail.com"},
     {name = "Peihang Lin"},
     {name = "Mucheng Zhu"},
     {name = "Shanmei Wanyan"},
     {name = "Ying Jiang"},
     {name = "Chris H. Rycroft"},
     {name = "Chenfanfu Jiang"},
+    {name = "Jiayin Lu", email = "jiayinlu19960224work@gmail.com"},
 ]
 keywords = ["voronoi", "tessellation", "computational-geometry", "parallel", "voro++"]
 classifiers = [
