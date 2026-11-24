@@ -13,7 +13,7 @@ tessellations of particles with different sizes, and it includes tools for
 extracting the interface between two groups of cells and for exporting
 meshes.
 
-By Peihang Lin\*, Mucheng Zhu\*, Shanmei Wanyan\*, Ying Jiang, [Chris H. Rycroft](https://people.math.wisc.edu/~chr/group.html), [Chenfanfu Jiang](https://www.math.ucla.edu/~cffjiang/), [Jiayin Lu](https://jlu227.wixsite.com/kay-lu)
+By Peihang Lin\*, Shanmei Wanyan\*, Mucheng Zhu\*, Ying Jiang, [Chris H. Rycroft](https://people.math.wisc.edu/~chr/group.html), [Chenfanfu Jiang](https://www.math.ucla.edu/~cffjiang/), [Jiayin Lu](https://jlu227.wixsite.com/kay-lu)
 
 \*Equal contribution
 
